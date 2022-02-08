@@ -37,24 +37,22 @@ trait StructureStrategy
     }
 
     /**
-     * @desc 设置结构类型
-     * @param string $structureType
-     * @return $this
+     * @return string
      */
-    final public function setStructureType(string $structureType)
+    public function getStructureType() : string
+    {
+        return $this->structureType;
+    }
+
+    /**
+     * @param string $structureType
+     * @return StructureStrategy
+     */
+    public function setStructureType(string $structureType) : StructureStrategy
     {
         $this->structureType = $structureType;
 
         return $this;
-    }
-
-    /**
-     * @desc 获取结构类型
-     * @return string
-     */
-    final public function getStructureType() : string
-    {
-        return $this->structureType;
     }
 
     /**
