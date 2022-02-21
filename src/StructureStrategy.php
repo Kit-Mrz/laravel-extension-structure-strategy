@@ -46,9 +46,9 @@ trait StructureStrategy
 
     /**
      * @param string $structureType
-     * @return StructureStrategy
+     * @return $this
      */
-    public function setStructureType(string $structureType) : StructureStrategy
+    public function setStructureType(string $structureType)
     {
         $this->structureType = $structureType;
 
